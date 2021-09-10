@@ -1,8 +1,13 @@
 # CS 225 (Data Structures and Software Principles) @ UIUC -- Historical Lab Code Library
 
-<img src="https://raw.githubusercontent.com/maxieds/ThrowingSomeOldBitsIntoAHoleOnGitHub/master/HiMyNameIsLuckyHiLucky/repository-open-graph-template.png" />
+<img src="https://raw.githubusercontent.com/maxieds/CS225UIUCHistoricalLabCodeLibrary./main/repository-open-graph-template.png" />
 
-Since a historical set of 2002-era CS225 lectures was made available on archive.org by Jason Zych in 2021, we think that the companion C++ lab code that went along with the Spring 2005 counterpart to those lectures should be made freely available too. An active link is [here](https://github.com/maxieds/ThrowingSomeOldBitsIntoAHoleOnGitHub/tree/master/HiMyNameIsLuckyHiLucky/codelibr).
+Since a historical set of 2002-era CS225 lectures was made available on archive.org by Jason Zych in 2021, we think that the companion C++ lab code that went along with the Spring 2005 counterpart to those lectures should be made freely available too. 
+
+To clone the repository, run the following ``bash`` terminal command:
+```bash
+$ git clone https://github.com/maxieds/CS225UIUCHistoricalLabCodeLibrary\..git
+```
 
 ## Links 
 
