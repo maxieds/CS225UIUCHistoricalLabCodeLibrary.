@@ -1,0 +1,23 @@
+Testing stack code
+-----------------
+
+ - Testing array implementation:
+ 
+     1) copy array-implemented-stack.* to this directory
+     2) uncomment the #include line for that .h file in main.cpp
+     3) copy Makefile.array to Makefile 
+     4) run `make', and then run the resultant program. Results should
+         match test.1.std
+
+ - Testing implementation that uses nested singly-linked node class
+
+     1) copy singly-linked-stack.* to this directory
+     2) uncomment the #include line for that .h file in main.cpp
+     3) copy Makefile.list to Makefile 
+     4) run `make', and then run the resultant program. Results should
+         match test.1.std
+
+Note that both implementations produce the same output, as they
+should, since they are implementing the same interface. 
+
+

@@ -1,0 +1,621 @@
+*** We are testing array code
+
+*** Testing arrays of integers:
+
+*** Values for array created with no-argument constructor:
+lower: 0
+upper: -1
+size: 0
+
+
+*** Values for array created with two-int constructor:
+lower: -6
+upper: 4
+size: 11
+
+
+*** Initialize and print out array:
+i: -6   val: 3
+i: -5   val: 3
+i: -4   val: 3
+i: -3   val: 3
+i: -2   val: 3
+i: -1   val: 3
+i: 0   val: 3
+i: 1   val: 3
+i: 2   val: 3
+i: 3   val: 3
+i: 4   val: 3
+
+
+*** print out array again:
+i: -6   val: 4
+i: -5   val: 4
+i: -4   val: 4
+i: -3   val: 4
+i: -2   val: 4
+i: -1   val: 4
+i: 0   val: 4
+i: 1   val: 4
+i: 2   val: 4
+i: 3   val: 4
+i: 4   val: 4
+
+
+*** setBounds call, lower--->    and upper---->
+lower: -4
+upper: 7
+size: 12
+i: -4   val: 4
+i: -3   val: 4
+i: -2   val: 4
+i: -1   val: 4
+i: 0   val: 4
+i: 1   val: 4
+i: 2   val: 4
+i: 3   val: 4
+i: 4   val: 4
+i: 5   val: 19
+i: 6   val: 20
+i: 7   val: 21
+
+
+*** setBounds call <-----lower and  <-----upper
+lower: -8
+upper: 2
+size: 11
+i: -8   val: 360
+i: -7   val: 361
+i: -6   val: 362
+i: -5   val: 363
+i: -4   val: 4
+i: -3   val: 4
+i: -2   val: 4
+i: -1   val: 4
+i: 0   val: 4
+i: 1   val: 4
+i: 2   val: 4
+
+
+*** setBounds call <-----lower and  upper---->
+lower: -13
+upper: 5
+size: 19
+i: -13   val: 91
+i: -12   val: 92
+i: -11   val: 93
+i: -10   val: 94
+i: -9   val: 95
+i: -8   val: 360
+i: -7   val: 361
+i: -6   val: 362
+i: -5   val: 363
+i: -4   val: 4
+i: -3   val: 4
+i: -2   val: 4
+i: -1   val: 4
+i: 0   val: 4
+i: 1   val: 4
+i: 2   val: 4
+i: 3   val: 98
+i: 4   val: 97
+i: 5   val: 96
+
+
+*** setBounds call lower-----> and <------upper
+lower: -2
+upper: 1
+size: 4
+i: -2   val: 4
+i: -1   val: 4
+i: 0   val: 4
+i: 1   val: 4
+
+
+*** copy constructor call:
+
+*** const operator[]:
+lower: -2
+upper: 1
+size: 4
+i: -2   val: 4
+i: -1   val: 4
+i: 0   val: 4
+i: 1   val: 4
+
+
+
+*** assignment call:
+
+lower: -2
+upper: 1
+size: 4
+i: -2   val: 4
+i: -1   val: 4
+i: 0   val: 4
+i: 1   val: 4
+
+
+*** Testing arrays of strings:
+
+*** Values for array created with no-argument constructor:
+lower: 0
+upper: -1
+size: 0
+
+
+*** Values for array created with two-String constructor:
+lower: -6
+upper: 4
+size: 11
+
+
+*** Initialize and print out array:
+i: -6   val: foo
+i: -5   val: foo
+i: -4   val: foo
+i: -3   val: foo
+i: -2   val: foo
+i: -1   val: foo
+i: 0   val: foo
+i: 1   val: foo
+i: 2   val: foo
+i: 3   val: foo
+i: 4   val: foo
+
+
+*** print out array again:
+i: -6   val: another foo
+i: -5   val: another foo
+i: -4   val: another foo
+i: -3   val: another foo
+i: -2   val: another foo
+i: -1   val: another foo
+i: 0   val: another foo
+i: 1   val: another foo
+i: 2   val: another foo
+i: 3   val: another foo
+i: 4   val: another foo
+
+
+*** setBounds call, lower--->    and upper---->
+lower: -4
+upper: 7
+size: 12
+i: -4   val: another foo
+i: -3   val: another foo
+i: -2   val: another foo
+i: -1   val: another foo
+i: 0   val: another foo
+i: 1   val: another foo
+i: 2   val: another foo
+i: 3   val: another foo
+i: 4   val: another foo
+i: 5   val: one
+i: 6   val: two
+i: 7   val: 
+
+
+*** setBounds call <-----lower and  <-----upper
+lower: -8
+upper: 2
+size: 11
+i: -8   val: 360
+i: -7   val: 361
+i: -6   val: 362
+i: -5   val: 363
+i: -4   val: another foo
+i: -3   val: another foo
+i: -2   val: another foo
+i: -1   val: another foo
+i: 0   val: another foo
+i: 1   val: another foo
+i: 2   val: another foo
+
+
+*** setBounds call <-----lower and  upper---->
+lower: -13
+upper: 5
+size: 19
+i: -13   val: 
+i: -12   val: 
+i: -11   val: 
+i: -10   val: 
+i: -9   val: 
+i: -8   val: 360
+i: -7   val: 361
+i: -6   val: 362
+i: -5   val: 363
+i: -4   val: another foo
+i: -3   val: another foo
+i: -2   val: another foo
+i: -1   val: another foo
+i: 0   val: another foo
+i: 1   val: another foo
+i: 2   val: another foo
+i: 3   val: 
+i: 4   val: 
+i: 5   val: 
+
+
+*** setBounds call lower-----> and <------upper
+lower: -2
+upper: 1
+size: 4
+i: -2   val: another foo
+i: -1   val: another foo
+i: 0   val: another foo
+i: 1   val: another foo
+
+
+*** copy constructor call:
+
+*** const operator[]:
+lower: -2
+upper: 1
+size: 4
+i: -2   val: another foo
+i: -1   val: another foo
+i: 0   val: another foo
+i: 1   val: another foo
+
+
+
+*** assignment call:
+
+lower: -2
+upper: 1
+size: 4
+i: -2   val: another foo
+i: -1   val: another foo
+i: 0   val: another foo
+i: 1   val: another foo
+
+
+*** Testing iterators with Array class...
+
+
+
+*** Testing iterators: 
+
+*** Forward non-const iteration; prefix versions...
+Crichton
+Aeryn
+D'Argo
+Chiana
+Rygel
+Pilot
+Zhann
+Scorpius
+Crais
+Jool
+Sizoku
+Moya
+...and now go backwards...
+Moya
+Sizoku
+Jool
+Crais
+Scorpius
+Zhann
+Pilot
+Rygel
+Chiana
+D'Argo
+Aeryn
+Crichton
+
+*** Forward non-const iteration; postfix versions...
+Crichton
+Aeryn
+D'Argo
+Chiana
+Rygel
+Pilot
+Zhann
+Scorpius
+Crais
+Jool
+Sizoku
+Moya
+...and now go backwards...
+Moya
+Sizoku
+Jool
+Crais
+Scorpius
+Zhann
+Pilot
+Rygel
+Chiana
+D'Argo
+Aeryn
+Crichton
+
+Here's the first value again: Crichton
+
+
+*** Forward const iteration; prefix versions...
+Crichton
+Aeryn
+D'Argo
+Chiana
+Rygel
+Pilot
+Zhann
+Scorpius
+Crais
+Jool
+Sizoku
+Moya
+...and now go backwards...
+Moya
+Sizoku
+Jool
+Crais
+Scorpius
+Zhann
+Pilot
+Rygel
+Chiana
+D'Argo
+Aeryn
+Crichton
+
+*** Forward const iteration; postfix versions...
+Crichton (the last character is: n)
+Aeryn (the last character is: n)
+D'Argo (the last character is: o)
+Chiana (the last character is: a)
+Rygel (the last character is: l)
+Pilot (the last character is: t)
+Zhann (the last character is: n)
+Scorpius (the last character is: s)
+Crais (the last character is: s)
+Jool (the last character is: l)
+Sizoku (the last character is: u)
+Moya (the last character is: a)
+...and now go backwards...
+Moya
+Sizoku
+Jool
+Crais
+Scorpius
+Zhann
+Pilot
+Rygel
+Chiana
+D'Argo
+Aeryn
+Crichton
+
+
+*** Reverse non-const iteration; prefix versions...
+Moya
+Sizoku
+Jool
+Crais
+Scorpius
+Zhann
+Pilot
+Rygel
+Chiana
+D'Argo
+Aeryn
+Crichton
+...and now go backwards...
+Crichton
+Aeryn
+D'Argo
+Chiana
+Rygel
+Pilot
+Zhann
+Scorpius
+Crais
+Jool
+Sizoku
+Moya
+
+*** Reverse non-const iteration; postfix versions...
+Moya
+Sizoku
+Jool
+Crais
+Scorpius
+Zhann
+Pilot
+Rygel
+Chiana
+D'Argo
+Aeryn
+Crichton
+...and now go backwards...
+Crichton
+Aeryn
+D'Argo
+Chiana
+Rygel
+Pilot
+Zhann
+Scorpius
+Crais
+Jool
+Sizoku
+Moya
+
+Here's the first value again: Moya
+
+
+*** Reverse const iteration; prefix versions...
+Moya
+Sizoku
+Jool
+Crais
+Scorpius
+Zhann
+Pilot
+Rygel
+Chiana
+D'Argo
+Aeryn
+Crichton
+...and now go backwards...
+Crichton
+Aeryn
+D'Argo
+Chiana
+Rygel
+Pilot
+Zhann
+Scorpius
+Crais
+Jool
+Sizoku
+Moya
+
+*** Reverse const iteration; postfix versions...
+Moya (the last character is: a)
+Sizoku (the last character is: u)
+Jool (the last character is: l)
+Crais (the last character is: s)
+Scorpius (the last character is: s)
+Zhann (the last character is: n)
+Pilot (the last character is: t)
+Rygel (the last character is: l)
+Chiana (the last character is: a)
+D'Argo (the last character is: o)
+Aeryn (the last character is: n)
+Crichton (the last character is: n)
+...and now go backwards...
+Crichton
+Aeryn
+D'Argo
+Chiana
+Rygel
+Pilot
+Zhann
+Scorpius
+Crais
+Jool
+Sizoku
+Moya
+
+
+*** Forward iteration using prefix versions...
+Crichton
+Aeryn
+D'Argo
+Chiana
+Rygel
+Pilot
+Zhann
+Scorpius
+Crais
+Jool
+Sizoku
+Moya
+...and now go backwards...
+MoyaM
+SizokuM
+JoolM
+CraisM
+ScorpiusM
+ZhannM
+PilotM
+RygelM
+ChianaM
+D'ArgoM
+AerynM
+CrichtonM
+
+
+*** Forward iteration using postfix versions...
+CrichtonM
+AerynM
+D'ArgoM
+ChianaM
+RygelM
+PilotM
+ZhannM
+ScorpiusM
+CraisM
+JoolM
+SizokuM
+MoyaM
+...and now go backwards...
+MoyaL
+SizokuL
+JoolL
+CraisL
+ScorpiusL
+ZhannL
+PilotL
+RygelL
+ChianaL
+D'ArgoL
+AerynL
+CrichtonL
+Here's the first value again: CrichtonL
+
+
+*** Forward iteration using prefix versions...
+MoyaL
+SizokuL
+JoolL
+CraisL
+ScorpiusL
+ZhannL
+PilotL
+RygelL
+ChianaL
+D'ArgoL
+AerynL
+CrichtonL
+...and now go backwards...
+CrichtonLM
+AerynLM
+D'ArgoLM
+ChianaLM
+RygelLM
+PilotLM
+ZhannLM
+ScorpiusLM
+CraisLM
+JoolLM
+SizokuLM
+MoyaLM
+
+
+*** Forward iteration using postfix versions...
+MoyaLM
+SizokuLM
+JoolLM
+CraisLM
+ScorpiusLM
+ZhannLM
+PilotLM
+RygelLM
+ChianaLM
+D'ArgoLM
+AerynLM
+CrichtonLM
+...and now go backwards...
+CrichtonLL
+AerynLL
+D'ArgoLL
+ChianaLL
+RygelLL
+PilotLL
+ZhannLL
+ScorpiusLL
+CraisLL
+JoolLL
+SizokuLL
+MoyaLL
+
+Here's the first value again: MoyaLL
+
+
+
+

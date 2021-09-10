@@ -1,0 +1,12 @@
+
+The code as written should compile and produce the output seen
+in the text file test.1.std.
+
+If you uncompile line 117 of main.cpp and recompile the code, you
+will see a compiler error relating to the fact that the call to
+operator[] on that line is being called on a const object and thus
+cannot return a modifiable value. 
+
+
+
+

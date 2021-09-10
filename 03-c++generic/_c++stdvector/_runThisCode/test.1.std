@@ -1,0 +1,808 @@
+*** We are testing vector code
+
+*** Testing empty vectors.
+
+This vector is empty.
+Size: 0
+Capacity: 0
+New size: 0
+New capacity: 15
+
+*** About to test iterators on empty vector...
+
+*** Forward non-const iteration; prefix versions...
+...and now go backwards...
+
+*** Forward non-const iteration; postfix versions...
+...and now go backwards...
+
+
+
+*** Forward const iteration; prefix versions...
+...and now go backwards...
+
+*** Forward const iteration; postfix versions...
+...and now go backwards...
+
+
+*** Reverse non-const iteration; prefix versions...
+...and now go backwards...
+
+*** Reverse non-const iteration; postfix versions...
+...and now go backwards...
+
+
+
+*** Reverse const iteration; prefix versions...
+...and now go backwards...
+
+*** Reverse const iteration; postfix versions...
+...and now go backwards...
+
+
+
+
+This vector is empty.
+Size: 0
+Capacity: 15
+*** Forward non-const iteration; prefix versions...
+...and now go backwards...
+
+*** Forward non-const iteration; postfix versions...
+...and now go backwards...
+
+
+
+*** Forward const iteration; prefix versions...
+...and now go backwards...
+
+*** Forward const iteration; postfix versions...
+...and now go backwards...
+
+
+*** Reverse non-const iteration; prefix versions...
+...and now go backwards...
+
+*** Reverse non-const iteration; postfix versions...
+...and now go backwards...
+
+
+
+*** Reverse const iteration; prefix versions...
+...and now go backwards...
+
+*** Reverse const iteration; postfix versions...
+...and now go backwards...
+
+
+
+
+We just have this for a moment: hello
+This vector is empty.
+Size: 0
+Capacity: 15
+*** Forward non-const iteration; prefix versions...
+...and now go backwards...
+
+*** Forward non-const iteration; postfix versions...
+...and now go backwards...
+
+
+
+*** Forward const iteration; prefix versions...
+...and now go backwards...
+
+*** Forward const iteration; postfix versions...
+...and now go backwards...
+
+
+*** Reverse non-const iteration; prefix versions...
+...and now go backwards...
+
+*** Reverse non-const iteration; postfix versions...
+...and now go backwards...
+
+
+
+*** Reverse const iteration; prefix versions...
+...and now go backwards...
+
+*** Reverse const iteration; postfix versions...
+...and now go backwards...
+
+
+
+
+*** Testing a pre-assigned vector 
+
+This vector is not empty.
+Size: 9
+Capacity: 9
+New size: 9
+New capacity: 15
+
+First pass down that vector:
+at index 0: init
+at index 1: init
+at index 2: init
+at index 3: init
+at index 4: init
+at index 5: init
+at index 6: init
+at index 7: init
+at index 8: init
+
+Second pass down that vector:
+at index 0: init append
+at index 1: init append
+at index 2: init append
+at index 3: init append
+at index 4: init append
+at index 5: init append
+at index 6: init append
+at index 7: init append
+at index 8: init append
+
+Third pass down that vector:
+at index 0: init append more
+at index 1: init append more
+at index 2: init append more
+at index 3: init append more
+at index 4: init append more
+at index 5: init append more
+at index 6: init append more
+at index 7: init append more
+at index 8: init append more
+
+Final pass after assign call:
+at index 0: init-extra
+at index 1: init-extra
+at index 2: init-extra
+at index 3: init-extra
+at index 4: init-extra
+at index 5: init-extra
+at index 6: init-extra
+at index 7: init-extra
+at index 8: init-extra
+at index 9: init-extra
+at index 10: init-extra
+at index 11: init-extra
+
+This vector is not empty.
+Size: 12
+Capacity: 12
+
+
+*** Testing pre-assigned constant vector...
+
+This vector is not empty.
+Size: 12
+Capacity: 12
+First pass down that vector:
+at index 0: init-extra
+at index 1: init-extra
+at index 2: init-extra
+at index 3: init-extra
+at index 4: init-extra
+at index 5: init-extra
+at index 6: init-extra
+at index 7: init-extra
+at index 8: init-extra
+at index 9: init-extra
+at index 10: init-extra
+at index 11: init-extra
+
+Second pass down that vector:
+at index 0: init-extra
+at index 1: init-extra
+at index 2: init-extra
+at index 3: init-extra
+at index 4: init-extra
+at index 5: init-extra
+at index 6: init-extra
+at index 7: init-extra
+at index 8: init-extra
+at index 9: init-extra
+at index 10: init-extra
+at index 11: init-extra
+
+
+*** Testing general-use vector...
+
+This vector is not empty.
+Size: 12
+Capacity: 12
+New size: 12
+New capacity: 15
+
+
+Adding values to vector cells...
+
+
+Original set of values:
+Front is: Crichton
+Back is: Moya
+
+After a push_back() operation:
+Front is: Crichton
+Back is: Braca
+Size: 13
+Capacity: 15
+
+After a pop_back() operation:
+Front is: Crichton
+Back is: Moya
+Size: 12
+Capacity: 15
+
+After four push_back() operations:
+Front is: Crichton
+Back is: Stark
+Size: 16
+Capacity: 30
+
+Non-const so swapping front and back:
+Front is: Stark
+Back is: Crichton
+Size: 16
+Capacity: 30
+
+*** About to test iterator functions...
+
+*** Forward non-const iteration; prefix versions...
+Stark
+Aeryn
+D'Argo
+Chiana
+Rygel
+Pilot
+Zhann
+Scorpius
+Crais
+Jool
+Sizoku
+Moya
+Braca
+Talyn
+Grayza
+Crichton
+...and now go backwards...
+Crichton
+Grayza
+Talyn
+Braca
+Moya
+Sizoku
+Jool
+Crais
+Scorpius
+Zhann
+Pilot
+Rygel
+Chiana
+D'Argo
+Aeryn
+Stark
+
+*** Forward non-const iteration; postfix versions...
+Stark
+Aeryn
+D'Argo
+Chiana
+Rygel
+Pilot
+Zhann
+Scorpius
+Crais
+Jool
+Sizoku
+Moya
+Braca
+Talyn
+Grayza
+Crichton
+...and now go backwards...
+Crichton
+Grayza
+Talyn
+Braca
+Moya
+Sizoku
+Jool
+Crais
+Scorpius
+Zhann
+Pilot
+Rygel
+Chiana
+D'Argo
+Aeryn
+Stark
+
+Here's the first value again: Stark
+
+
+*** Forward const iteration; prefix versions...
+Stark
+Aeryn
+D'Argo
+Chiana
+Rygel
+Pilot
+Zhann
+Scorpius
+Crais
+Jool
+Sizoku
+Moya
+Braca
+Talyn
+Grayza
+Crichton
+...and now go backwards...
+Crichton
+Grayza
+Talyn
+Braca
+Moya
+Sizoku
+Jool
+Crais
+Scorpius
+Zhann
+Pilot
+Rygel
+Chiana
+D'Argo
+Aeryn
+Stark
+
+*** Forward const iteration; postfix versions...
+Stark (the last character is: k)
+Aeryn (the last character is: n)
+D'Argo (the last character is: o)
+Chiana (the last character is: a)
+Rygel (the last character is: l)
+Pilot (the last character is: t)
+Zhann (the last character is: n)
+Scorpius (the last character is: s)
+Crais (the last character is: s)
+Jool (the last character is: l)
+Sizoku (the last character is: u)
+Moya (the last character is: a)
+Braca (the last character is: a)
+Talyn (the last character is: n)
+Grayza (the last character is: a)
+Crichton (the last character is: n)
+...and now go backwards...
+Crichton
+Grayza
+Talyn
+Braca
+Moya
+Sizoku
+Jool
+Crais
+Scorpius
+Zhann
+Pilot
+Rygel
+Chiana
+D'Argo
+Aeryn
+Stark
+
+
+*** Reverse non-const iteration; prefix versions...
+Crichton
+Grayza
+Talyn
+Braca
+Moya
+Sizoku
+Jool
+Crais
+Scorpius
+Zhann
+Pilot
+Rygel
+Chiana
+D'Argo
+Aeryn
+Stark
+...and now go backwards...
+Stark
+Aeryn
+D'Argo
+Chiana
+Rygel
+Pilot
+Zhann
+Scorpius
+Crais
+Jool
+Sizoku
+Moya
+Braca
+Talyn
+Grayza
+Crichton
+
+*** Reverse non-const iteration; postfix versions...
+Crichton
+Grayza
+Talyn
+Braca
+Moya
+Sizoku
+Jool
+Crais
+Scorpius
+Zhann
+Pilot
+Rygel
+Chiana
+D'Argo
+Aeryn
+Stark
+...and now go backwards...
+Stark
+Aeryn
+D'Argo
+Chiana
+Rygel
+Pilot
+Zhann
+Scorpius
+Crais
+Jool
+Sizoku
+Moya
+Braca
+Talyn
+Grayza
+Crichton
+
+Here's the first value again: Crichton
+
+
+*** Reverse const iteration; prefix versions...
+Crichton
+Grayza
+Talyn
+Braca
+Moya
+Sizoku
+Jool
+Crais
+Scorpius
+Zhann
+Pilot
+Rygel
+Chiana
+D'Argo
+Aeryn
+Stark
+...and now go backwards...
+Stark
+Aeryn
+D'Argo
+Chiana
+Rygel
+Pilot
+Zhann
+Scorpius
+Crais
+Jool
+Sizoku
+Moya
+Braca
+Talyn
+Grayza
+Crichton
+
+*** Reverse const iteration; postfix versions...
+Crichton (the last character is: n)
+Grayza (the last character is: a)
+Talyn (the last character is: n)
+Braca (the last character is: a)
+Moya (the last character is: a)
+Sizoku (the last character is: u)
+Jool (the last character is: l)
+Crais (the last character is: s)
+Scorpius (the last character is: s)
+Zhann (the last character is: n)
+Pilot (the last character is: t)
+Rygel (the last character is: l)
+Chiana (the last character is: a)
+D'Argo (the last character is: o)
+Aeryn (the last character is: n)
+Stark (the last character is: k)
+...and now go backwards...
+Stark
+Aeryn
+D'Argo
+Chiana
+Rygel
+Pilot
+Zhann
+Scorpius
+Crais
+Jool
+Sizoku
+Moya
+Braca
+Talyn
+Grayza
+Crichton
+
+
+
+
+*** Assignment operator and iterator-based changes:
+*** Forward iteration using prefix versions...
+Stark
+Aeryn
+D'Argo
+Chiana
+Rygel
+Pilot
+Zhann
+Scorpius
+Crais
+Jool
+Sizoku
+Moya
+Braca
+Talyn
+Grayza
+Crichton
+...and now go backwards...
+CrichtonM
+GrayzaM
+TalynM
+BracaM
+MoyaM
+SizokuM
+JoolM
+CraisM
+ScorpiusM
+ZhannM
+PilotM
+RygelM
+ChianaM
+D'ArgoM
+AerynM
+StarkM
+
+
+*** Forward iteration using postfix versions...
+StarkM
+AerynM
+D'ArgoM
+ChianaM
+RygelM
+PilotM
+ZhannM
+ScorpiusM
+CraisM
+JoolM
+SizokuM
+MoyaM
+BracaM
+TalynM
+GrayzaM
+CrichtonM
+...and now go backwards...
+CrichtonL
+GrayzaL
+TalynL
+BracaL
+MoyaL
+SizokuL
+JoolL
+CraisL
+ScorpiusL
+ZhannL
+PilotL
+RygelL
+ChianaL
+D'ArgoL
+AerynL
+StarkL
+Here's the first value again: StarkL
+
+
+*** Forward iteration using prefix versions...
+CrichtonL
+GrayzaL
+TalynL
+BracaL
+MoyaL
+SizokuL
+JoolL
+CraisL
+ScorpiusL
+ZhannL
+PilotL
+RygelL
+ChianaL
+D'ArgoL
+AerynL
+StarkL
+...and now go backwards...
+StarkLM
+AerynLM
+D'ArgoLM
+ChianaLM
+RygelLM
+PilotLM
+ZhannLM
+ScorpiusLM
+CraisLM
+JoolLM
+SizokuLM
+MoyaLM
+BracaLM
+TalynLM
+GrayzaLM
+CrichtonLM
+
+
+*** Forward iteration using postfix versions...
+CrichtonLM
+GrayzaLM
+TalynLM
+BracaLM
+MoyaLM
+SizokuLM
+JoolLM
+CraisLM
+ScorpiusLM
+ZhannLM
+PilotLM
+RygelLM
+ChianaLM
+D'ArgoLM
+AerynLM
+StarkLM
+...and now go backwards...
+StarkLL
+AerynLL
+D'ArgoLL
+ChianaLL
+RygelLL
+PilotLL
+ZhannLL
+ScorpiusLL
+CraisLL
+JoolLL
+SizokuLL
+MoyaLL
+BracaLL
+TalynLL
+GrayzaLL
+CrichtonLL
+
+Here's the first value again: CrichtonLL
+
+
+
+
+*** Const usage of front and back:
+Front is: Stark
+Back is: Crichton
+Size: 16
+Capacity: 30
+
+
+*** Testing insert and erase:
+First iterator at: Chiana
+Second iterator at: Scorpius
+About to run erase of range...
+
+*** Forward non-const iteration; prefix versions...
+Stark
+Aeryn
+D'Argo
+Scorpius
+Crais
+Jool
+Sizoku
+Moya
+Braca
+Talyn
+Grayza
+Crichton
+
+First iterator at: Jool
+About to erase single value...
+
+*** Forward non-const iteration; prefix versions...
+Stark
+Aeryn
+D'Argo
+Scorpius
+Crais
+Sizoku
+Moya
+Braca
+Talyn
+Grayza
+Crichton
+
+This vector is not empty.
+Size: 11
+Capacity: 30
+
+
+First iterator at: Moya
+About to insert single value...
+
+*** Forward non-const iteration; prefix versions...
+Stark
+Aeryn
+D'Argo
+Scorpius
+Crais
+Sizoku
+Rygel
+Moya
+Braca
+Talyn
+Grayza
+Crichton
+
+First iterator at: Crais
+About to insert many duplicate values...
+
+*** Forward non-const iteration; prefix versions...
+Stark
+Aeryn
+D'Argo
+Scorpius
+Pilot
+Pilot
+Pilot
+Pilot
+Pilot
+Crais
+Sizoku
+Rygel
+Moya
+Braca
+Talyn
+Grayza
+Crichton
+
+This vector is not empty.
+Size: 17
+Capacity: 30
+
+
+Clearing vector...
+
+*** Forward non-const iteration; prefix versions...
+
+This vector is empty.
+Size: 0
+Capacity: 30
+
+
+*** Testing operators...
+1
+0
+0
+
+0
+1
+1
+
+0
+1
+1
+
+emptyVector is : < empty vector >
+usedVector is : < Pilot Pilot Pilot Pilot Pilot Moya >
+
+

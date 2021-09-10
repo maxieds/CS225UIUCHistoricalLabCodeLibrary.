@@ -1,0 +1,10 @@
+Testing skiplist code
+-----------------
+
+     1) copy skiplist.* to this directory
+     2) run `make', and then run the resultant a.out. 
+
+Results may not match test.1.std due to differences in randomization
+selection. 
+
+

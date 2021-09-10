@@ -1,0 +1,113 @@
+Size of tester1 is: 0
+tester 1 is: < empty queue >
+tester1 is empty
+
+Size of tester2 is: 0
+tester 2 is: < empty queue >
+tester2 is empty
+
+Size of tester3 is: 0
+tester 3 is: < empty queue >
+tester3 is empty
+
+Current front element is: 7
+Current front element is: 7
+Current front element is: 7
+Current front element is: 7
+Current front element is: 7
+Current front element is: 7
+Current front element is: 7
+Current front element is: 7
+Current front element is: 7
+Current front element is: 7
+Current front element is: 7
+Current front element is: 7
+
+Size of tester1 is: 12
+tester 1 is: < 7 2 9 11 4 8 3 1 10 5 0 6 >
+tester1 is not empty
+
+Size of tester4 is: 12
+tester 4 is: < 7 2 9 11 4 8 3 1 10 5 0 6 >
+tester4 is not empty
+
+Size of tester5 is: 12
+tester 5 is: < 7 2 9 11 4 8 3 1 10 5 0 6 >
+tester5 is not empty
+
+Just dequeued 7 from queue.
+Size of tester4 is: 11
+tester 4 is: < 2 9 11 4 8 3 1 10 5 0 6 >
+tester4 is not empty
+
+Just dequeued 2 from queue.
+Size of tester4 is: 10
+tester 4 is: < 9 11 4 8 3 1 10 5 0 6 >
+tester4 is not empty
+
+Just dequeued 9 from queue.
+Size of tester4 is: 9
+tester 4 is: < 11 4 8 3 1 10 5 0 6 >
+tester4 is not empty
+
+Just dequeued 11 from queue.
+Size of tester4 is: 8
+tester 4 is: < 4 8 3 1 10 5 0 6 >
+tester4 is not empty
+
+Just dequeued 4 from queue.
+Size of tester4 is: 7
+tester 4 is: < 8 3 1 10 5 0 6 >
+tester4 is not empty
+
+Just dequeued 8 from queue.
+Size of tester4 is: 6
+tester 4 is: < 3 1 10 5 0 6 >
+tester4 is not empty
+
+Just dequeued 3 from queue.
+Size of tester4 is: 5
+tester 4 is: < 1 10 5 0 6 >
+tester4 is not empty
+
+Just dequeued 1 from queue.
+Size of tester4 is: 4
+tester 4 is: < 10 5 0 6 >
+tester4 is not empty
+
+Just dequeued 10 from queue.
+Size of tester4 is: 3
+tester 4 is: < 5 0 6 >
+tester4 is not empty
+
+Just dequeued 5 from queue.
+Size of tester4 is: 2
+tester 4 is: < 0 6 >
+tester4 is not empty
+
+Just dequeued 0 from queue.
+Size of tester4 is: 1
+tester 4 is: < 6 >
+tester4 is not empty
+
+Just dequeued 6 from queue.
+Size of tester4 is: 0
+tester 4 is: < empty queue >
+tester4 is empty
+
+Current front element is: 7
+Current front element is: 7
+Current front element is: 7
+Current front element is: 2
+Current front element is: 2
+Current front element is: 9
+Current front element is: 4
+Current front element is: 4
+Current front element is: 4
+Current front element is: 1
+Current front element is: 10
+
+Size of tester4 is: 1
+tester 4 is: < 10 >
+tester4 is not empty
+

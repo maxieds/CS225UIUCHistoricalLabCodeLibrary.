@@ -1,0 +1,53 @@
+*** Creating first course...
+
+*** Make use of no-argument constructor for second course.
+This doesn't give legal course values, but the point is
+to demonstrate the no-argument constructor, not to have
+a legitimate pair of course values.
+
+*** Creating third course via user input...
+Enter ID value: 
+Enter credit value: 
+
+*** Creating empty schedule...
+Number of courses in schedule: 0
+
+*** Add first three courses to schedule...
+First addition result: 1
+
+Second addition result: 1
+
+Third addition result: 1
+
+*** Print schedule so far...
+Number of courses in schedule: 3
+   Course #1: ID is 34523, credit is 3
+   Course #2: ID is -1, credit is -1
+   Course #3: ID is 83492, credit is 4
+
+*** Create temporary object to write into c1...
+*** Adding c1 (with new values) to schedule...
+Fourth addition result: 1
+
+*** Add temporary object directly to schedule...
+Fifth addition result: 1
+
+*** Printing out schedule after five additions...
+Number of courses in schedule: 5
+   Course #1: ID is 34523, credit is 3
+   Course #2: ID is -1, credit is -1
+   Course #3: ID is 83492, credit is 4
+   Course #4: ID is 11234, credit is 5
+   Course #5: ID is 45463, credit is 3
+
+*** Trying to add a sixth course...
+Sixth addition result: 0
+
+*** Final print of schedule...
+Number of courses in schedule: 5
+   Course #1: ID is 34523, credit is 3
+   Course #2: ID is -1, credit is -1
+   Course #3: ID is 83492, credit is 4
+   Course #4: ID is 11234, credit is 5
+   Course #5: ID is 45463, credit is 3
+

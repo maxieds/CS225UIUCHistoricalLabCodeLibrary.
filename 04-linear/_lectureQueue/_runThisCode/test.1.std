@@ -1,0 +1,77 @@
+tester1 is empty
+
+tester2 is empty
+
+3
+tester3 is empty
+
+Current front element is: 7
+Current front element is: 7
+Current front element is: 7
+Current front element is: 7
+Current front element is: 7
+Current front element is: 7
+Current front element is: 7
+Current front element is: 7
+Current front element is: 7
+Current front element is: 7
+Current front element is: 7
+Current front element is: 7
+
+tester1 is not empty
+
+tester4 is not empty
+
+3
+tester5 is not empty
+
+Just dequeued 7 from queue.
+tester4 is not empty
+
+Just dequeued 2 from queue.
+tester4 is not empty
+
+Just dequeued 9 from queue.
+tester4 is not empty
+
+Just dequeued 11 from queue.
+tester4 is not empty
+
+Just dequeued 4 from queue.
+tester4 is not empty
+
+Just dequeued 8 from queue.
+tester4 is not empty
+
+Just dequeued 3 from queue.
+tester4 is not empty
+
+Just dequeued 1 from queue.
+tester4 is not empty
+
+Just dequeued 10 from queue.
+tester4 is not empty
+
+Just dequeued 5 from queue.
+tester4 is not empty
+
+Just dequeued 0 from queue.
+tester4 is not empty
+
+Just dequeued 6 from queue.
+tester4 is empty
+
+Current front element is: 7
+Current front element is: 7
+Current front element is: 7
+Current front element is: 2
+Current front element is: 2
+Current front element is: 9
+Current front element is: 4
+Current front element is: 4
+Current front element is: 4
+Current front element is: 1
+Current front element is: 10
+
+tester4 is not empty
+

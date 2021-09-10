@@ -1,0 +1,139 @@
+// ********************************************
+// *                                          *
+// *  hashbase.h                              *
+// *                                          *
+// *  Interface for an abstract hash class    * 
+// *                                          *
+// *  Written 8/97 by Jason Zych              *
+// *  Revised: 15 Oct 1997 by Wendy L. Terry  *
+// *            -- made Find() pure virtual,  *
+// *            -- moved probing to Find()    *
+// *            -- added Rehash()             *
+// *            -- rewrote Insert() for use   *
+// *                with new Find()           *
+// *            -- updated comments           *
+// *           25 Feb 1998 by Wendy L. Terry  *
+// *            -- added copy constructor     *
+// *                 and operator=            *
+// *                                          *
+// ********************************************
+
+#ifndef  _HASHBASE_H
+#define  _HASHBASE_H
+
+#include "array.h"
+
+// Name: HashBase
+//
+// This class is meant to serve as an abstract base class for 
+//  any closed hashing class.  All basic operations, except Find,
+//  are defined.  Insert utilizes rehashing.
+//
+// Any derived class would need to at least define Find, which 
+//  should include the collision resolution strategy.  Additionally,
+//  the hash function itself and a decision on the key type (which
+//  is needed for the hash function) would be added by a derived
+//  class.
+//
+template <class Ktype, class Etype> 
+class HashBase
+{
+public:
+
+  // HashBase 
+  //   - default constructor
+  //   - parameters : tableSize - an integer that provides the tableSize
+  //                      that should be allocated
+  //   - creates a hash table of size tableSize and initializes it
+  HashBase(int tableSize = 59); 
+
+
+  // HashBase
+  //  - copy constructor
+  //  - parameters: origTable - the table to copy
+  //  - creates a new hash table that has the same values stored
+  //      in it as origTable does
+  //  - assuming that operator= is defined for Ktype and Etype,
+  //      the resulting copy will be a deep copy
+  HashBase(const HashBase &origTable);
+
+
+  // ~HashBase
+  //   - destructor
+  ~HashBase(); 
+
+
+  // operator=
+  //  - parameters: origTable - the table to copy from
+  //  - modifies the invoking hash table so it has the same values
+  //      stored in it as origTable does
+  //  - assuming that operator= is defined for Ktype and Etype,
+  //      the resulting copy will be a deep copy
+  HashBase& operator=(const HashBase &origTable);
+
+
+  // Insert
+  //   - parameters : Key - the value that lookups are performed on
+  //                : Element - the value that should be stored in the
+  //                               position found with a lookup of Key 
+  void Insert(const Ktype &Key, const Etype &Element);  
+
+
+  // Remove
+  //   - parameters : Key - the value that should drive the lookup;
+  //   - removes from the table the node found upon a lookup of Key 
+  //   - if Key is not in table, reports error and returns
+  void Remove(Ktype &Key); 
+
+
+  // Find
+  //   - pure virtual function to be provided by inherited classes
+  //   - parameters : Key - the value we are looking up
+  //   - finds Key in the table, and sets the current index to that index
+  //   - returns 1 if successful, 0 otherwise
+  virtual int Find(Ktype Key) = 0;
+
+
+  // Retrieve
+  //   - parameters : none
+  //   - returns the *element* most recently found or inserted,
+  //       unstable if called after Remove() with no intervening
+  //       Find() or Insert()
+  Etype& Retrieve(); 
+
+
+  // Print
+  //   - parameters : none
+  //   - prints out the information of the table
+  void Print(); 
+
+protected:
+
+  struct TableNode
+  {
+    Ktype tKey; 
+    Etype tElem; 
+    char status;   
+
+    TableNode() : status('E') {}
+    TableNode(Ktype tnKey, Etype tnElem)
+      : status('E'), tKey(tnKey), tElem(tnElem) {}
+  }; 
+
+  Array<TableNode*>* hashTable;   // pointer to the hash table
+  int currentIndex;               // pointer to table cell
+  int hashTableSize;              // size of hash table
+  int numElements;                // number of non-empty cells
+
+  // Rehash
+  //   - rehashes the table when it gets close to full
+  void Rehash();
+
+  // HashFunction
+  //   - pure virtual function 
+  //   - compute hash value of Key
+  virtual int HashFunction(Ktype Key) = 0; 
+
+};  
+
+#endif 

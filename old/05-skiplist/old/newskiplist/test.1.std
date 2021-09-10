@@ -1,0 +1,82 @@
+Length of tester1 is: 0
+tester 1 is: < empty list >
+***Warning: Cannot move current to head of an empty list.
+***Warning: Cannot move current to tail of an empty list.
+***Warning: Cannot move to next position of an empty list.
+***Warning: Cannot move to previous position of an empty list.
+***Warning: Cannot update an element in an empty list.
+***Warning: Attempt to remove an element from an empty list.
+Length of tester2 is: 0
+tester 2 is: < empty list >
+Length of tester3 is: 0
+tester 3 is: < empty list >
+
+Current element is: 7
+Current element is: 2
+Current element is: 9
+Current element is: 11
+Current element is: 4
+Current element is: 8
+Current element is: 3
+Current element is: 1
+Current element is: 10
+Current element is: 5
+Current element is: 0
+Current element is: 6
+Current element is: 7
+***Warning: Cannot decrement current position when at first element.
+Current element is: 11
+Current element is: 6
+***Warning: Cannot advance current position past end position.
+Current element is: 10
+Length of tester1 is: 12
+tester 1 is: < 7 2 9 11 4 8 3 1 10 5 0 6 >
+Length of tester4 is: 12
+tester 4 is: < 7 2 9 11 4 8 3 1 10 5 0 6 >
+Length of tester5 is: 12
+tester 5 is: < 7 2 9 11 4 8 3 1 10 5 0 6 >
+Current element is: 7
+Current element is: 2
+Current element is: 9
+Current element is: 11
+Current element is: 4
+Current element is: 8
+Current element is: 3
+Current element is: 1
+Current element is: 10
+Current element is: 5
+Current element is: 0
+Current element is: 6
+Length of tester2 is: 12
+tester 2 is: < 6 0 5 10 1 3 8 4 11 9 2 7 >
+new last value in tester2 is: 2
+***Warning: Cannot advance current position past end position.
+Length of tester2 is: 8
+tester 2 is: < 0 5 1 3 8 4 9 2 >
+Length of tester2 is: 0
+tester 2 is: < empty list >
+
+Current element is: 7
+Current element is: 2
+Current element is: 9
+Current element is: 11
+Current element is: 4
+Current element is: 8
+Current element is: 3
+Current element is: 1
+Current element is: 10
+Current element is: 5
+Current element is: 0
+Current element is: 6
+Length of tester3 is: 12
+tester 3 is: < 7 4 1 3 6 10 0 5 8 11 2 9 >
+6 is in tester3
+9 is in tester3
+4 is in tester3
+14 is not in tester3
+Length of tester3 is: 12
+tester 3 is: < 7 13 1 3 14 4 0 5 8 11 2 12 >
+6 is not in tester3
+9 is not in tester3
+4 is in tester3
+14 is in tester3

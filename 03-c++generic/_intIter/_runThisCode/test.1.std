@@ -1,0 +1,200 @@
+*** We are testing array code
+
+*** Testing arrays of integers:
+
+*** Values for array created with no-argument constructor:
+lower: 0
+upper: -1
+size: 0
+
+
+*** Values for array created with two-int constructor:
+lower: -6
+upper: 4
+size: 11
+
+
+*** Initialize and print out array:
+i: -6   val: 3
+i: -5   val: 3
+i: -4   val: 3
+i: -3   val: 3
+i: -2   val: 3
+i: -1   val: 3
+i: 0   val: 3
+i: 1   val: 3
+i: 2   val: 3
+i: 3   val: 3
+i: 4   val: 3
+
+
+*** print out array again:
+i: -6   val: 4
+i: -5   val: 4
+i: -4   val: 4
+i: -3   val: 4
+i: -2   val: 4
+i: -1   val: 4
+i: 0   val: 4
+i: 1   val: 4
+i: 2   val: 4
+i: 3   val: 4
+i: 4   val: 4
+
+
+*** setBounds call, lower--->    and upper---->
+lower: -4
+upper: 7
+size: 12
+i: -4   val: 4
+i: -3   val: 4
+i: -2   val: 4
+i: -1   val: 4
+i: 0   val: 4
+i: 1   val: 4
+i: 2   val: 4
+i: 3   val: 4
+i: 4   val: 4
+i: 5   val: 19
+i: 6   val: 20
+i: 7   val: 21
+
+
+*** setBounds call <-----lower and  <-----upper
+lower: -8
+upper: 2
+size: 11
+i: -8   val: 360
+i: -7   val: 361
+i: -6   val: 362
+i: -5   val: 363
+i: -4   val: 4
+i: -3   val: 4
+i: -2   val: 4
+i: -1   val: 4
+i: 0   val: 4
+i: 1   val: 4
+i: 2   val: 4
+
+
+*** setBounds call <-----lower and  upper---->
+lower: -13
+upper: 5
+size: 19
+i: -13   val: 91
+i: -12   val: 92
+i: -11   val: 93
+i: -10   val: 94
+i: -9   val: 95
+i: -8   val: 360
+i: -7   val: 361
+i: -6   val: 362
+i: -5   val: 363
+i: -4   val: 4
+i: -3   val: 4
+i: -2   val: 4
+i: -1   val: 4
+i: 0   val: 4
+i: 1   val: 4
+i: 2   val: 4
+i: 3   val: 98
+i: 4   val: 97
+i: 5   val: 96
+
+
+*** setBounds call lower-----> and <------upper
+lower: -2
+upper: 1
+size: 4
+i: -2   val: 4
+i: -1   val: 4
+i: 0   val: 4
+i: 1   val: 4
+
+
+*** copy constructor call:
+
+*** const operator[]:
+lower: -2
+upper: 1
+size: 4
+i: -2   val: 4
+i: -1   val: 4
+i: 0   val: 4
+i: 1   val: 4
+
+
+
+*** assignment call:
+
+lower: -2
+upper: 1
+size: 4
+i: -2   val: 4
+i: -1   val: 4
+i: 0   val: 4
+i: 1   val: 4
+
+
+Printing iterator value: 4
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: 8
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: 12
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: 16
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: 20
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: 24
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: 28
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: 32
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: 36
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: 40
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+
+
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: 40
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: 36
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: 32
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: 28
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: 24
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: 20
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: 16
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: 12
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: 8
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: 4

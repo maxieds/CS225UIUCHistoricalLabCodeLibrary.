@@ -1,0 +1,31 @@
+Testing queue code
+-----------------
+
+ - Testing array implementation:
+ 
+     1) copy array-implemented-queue.* to this directory
+     2) uncomment the #include line for that .h file in queueTest.C
+     3) copy Makefile.arr to Makefile 
+     4) run `make', and then run the resultant a.out. Results should
+         match test.1.std
+
+ - Testing implementation that uses List class:
+
+     1) copy list-implemented-queue.* to this directory
+     2) uncomment the #include line for that .h file in queueTest.C
+     3) copy Makefile.list to Makefile
+     4) run `make', and then run the resultant a.out. Results should
+         match test.1.std
+
+ - Testing implementation that uses nested singly-linked node class
+
+     1) copy singly-linked-queue.* to this directory
+     2) uncomment the #include line for that .h file in queueTest.C
+     3) copy Makefile.slq to Makefile 
+     4) run `make', and then run the resultant a.out. Results should
+         match test.1.std
+
+Note that all three implementations produce the same output, as they
+should, since they are implementing the same interface. 
+
+

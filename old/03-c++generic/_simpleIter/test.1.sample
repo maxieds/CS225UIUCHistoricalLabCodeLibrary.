@@ -1,0 +1,62 @@
+Printing iterator value: 4
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: 8
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: 12
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: 16
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: 20
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: 24
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: 28
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: 32
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: 36
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: 40
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+
+
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: 40
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: 36
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: 32
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: 28
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: 24
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: 20
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: 16
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: 12
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: 8
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: 4

@@ -1,0 +1,686 @@
+*** Testing non-const forward iterator using prefix
+
+Printing iterator value: Aire
+Printing iterator value's length: 4
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Beginnings
+Printing iterator value's length: 10
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Colour My World
+Printing iterator value's length: 15
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Dialogue
+Printing iterator value's length: 8
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Feelin' Stronger Every Day
+Printing iterator value's length: 26
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Goodbye
+Printing iterator value's length: 7
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Introduction
+Printing iterator value's length: 12
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Just You 'N' Me
+Printing iterator value's length: 15
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Liberation
+Printing iterator value's length: 10
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Make Me Smile
+Printing iterator value's length: 13
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+
+
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Make Me Smile
+Printing iterator value's length: 13
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Liberation
+Printing iterator value's length: 10
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Just You 'N' Me
+Printing iterator value's length: 15
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Introduction
+Printing iterator value's length: 12
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Goodbye
+Printing iterator value's length: 7
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Feelin' Stronger Every Day
+Printing iterator value's length: 26
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Dialogue
+Printing iterator value's length: 8
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Colour My World
+Printing iterator value's length: 15
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Beginnings
+Printing iterator value's length: 10
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Aire
+Printing iterator value's length: 4
+
+
+*** Testing non-const forward iterator using postfix
+
+Printing iterator value: Aire
+Printing iterator value's length: 4
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Beginnings
+Printing iterator value's length: 10
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Colour My World
+Printing iterator value's length: 15
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Dialogue
+Printing iterator value's length: 8
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Feelin' Stronger Every Day
+Printing iterator value's length: 26
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Goodbye
+Printing iterator value's length: 7
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Introduction
+Printing iterator value's length: 12
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Just You 'N' Me
+Printing iterator value's length: 15
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Liberation
+Printing iterator value's length: 10
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Make Me Smile
+Printing iterator value's length: 13
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+
+
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Make Me Smile
+Printing iterator value's length: 13
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Liberation
+Printing iterator value's length: 10
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Just You 'N' Me
+Printing iterator value's length: 15
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Introduction
+Printing iterator value's length: 12
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Goodbye
+Printing iterator value's length: 7
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Feelin' Stronger Every Day
+Printing iterator value's length: 26
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Dialogue
+Printing iterator value's length: 8
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Colour My World
+Printing iterator value's length: 15
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Beginnings
+Printing iterator value's length: 10
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Aire
+Printing iterator value's length: 4
+
+
+*** Testing non-const reverse iterator using prefix
+
+Printing iterator value: Make Me Smile
+Printing iterator value's length: 13
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Liberation
+Printing iterator value's length: 10
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Just You 'N' Me
+Printing iterator value's length: 15
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Introduction
+Printing iterator value's length: 12
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Goodbye
+Printing iterator value's length: 7
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Feelin' Stronger Every Day
+Printing iterator value's length: 26
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Dialogue
+Printing iterator value's length: 8
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Colour My World
+Printing iterator value's length: 15
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Beginnings
+Printing iterator value's length: 10
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Aire
+Printing iterator value's length: 4
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+
+
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Aire
+Printing iterator value's length: 4
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Beginnings
+Printing iterator value's length: 10
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Colour My World
+Printing iterator value's length: 15
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Dialogue
+Printing iterator value's length: 8
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Feelin' Stronger Every Day
+Printing iterator value's length: 26
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Goodbye
+Printing iterator value's length: 7
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Introduction
+Printing iterator value's length: 12
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Just You 'N' Me
+Printing iterator value's length: 15
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Liberation
+Printing iterator value's length: 10
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Make Me Smile
+Printing iterator value's length: 13
+
+
+*** Testing non-const reverse iterator using postfix
+
+Printing iterator value: Make Me Smile
+Printing iterator value's length: 13
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Liberation
+Printing iterator value's length: 10
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Just You 'N' Me
+Printing iterator value's length: 15
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Introduction
+Printing iterator value's length: 12
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Goodbye
+Printing iterator value's length: 7
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Feelin' Stronger Every Day
+Printing iterator value's length: 26
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Dialogue
+Printing iterator value's length: 8
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Colour My World
+Printing iterator value's length: 15
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Beginnings
+Printing iterator value's length: 10
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Aire
+Printing iterator value's length: 4
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+
+
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Aire
+Printing iterator value's length: 4
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Beginnings
+Printing iterator value's length: 10
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Colour My World
+Printing iterator value's length: 15
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Dialogue
+Printing iterator value's length: 8
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Feelin' Stronger Every Day
+Printing iterator value's length: 26
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Goodbye
+Printing iterator value's length: 7
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Introduction
+Printing iterator value's length: 12
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Just You 'N' Me
+Printing iterator value's length: 15
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Liberation
+Printing iterator value's length: 10
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Make Me Smile
+Printing iterator value's length: 13
+
+
+*** Testing const forward iterator using prefix
+
+Printing iterator value: Aire
+Printing iterator value's length: 4
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Beginnings
+Printing iterator value's length: 10
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Colour My World
+Printing iterator value's length: 15
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Dialogue
+Printing iterator value's length: 8
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Feelin' Stronger Every Day
+Printing iterator value's length: 26
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Goodbye
+Printing iterator value's length: 7
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Introduction
+Printing iterator value's length: 12
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Just You 'N' Me
+Printing iterator value's length: 15
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Liberation
+Printing iterator value's length: 10
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Make Me Smile
+Printing iterator value's length: 13
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+
+
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Make Me Smile
+Printing iterator value's length: 13
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Liberation
+Printing iterator value's length: 10
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Just You 'N' Me
+Printing iterator value's length: 15
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Introduction
+Printing iterator value's length: 12
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Goodbye
+Printing iterator value's length: 7
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Feelin' Stronger Every Day
+Printing iterator value's length: 26
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Dialogue
+Printing iterator value's length: 8
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Colour My World
+Printing iterator value's length: 15
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Beginnings
+Printing iterator value's length: 10
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Aire
+Printing iterator value's length: 4
+
+
+*** Testing const forward iterator using postfix
+
+Printing iterator value: Aire
+Printing iterator value's length: 4
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Beginnings
+Printing iterator value's length: 10
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Colour My World
+Printing iterator value's length: 15
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Dialogue
+Printing iterator value's length: 8
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Feelin' Stronger Every Day
+Printing iterator value's length: 26
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Goodbye
+Printing iterator value's length: 7
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Introduction
+Printing iterator value's length: 12
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Just You 'N' Me
+Printing iterator value's length: 15
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Liberation
+Printing iterator value's length: 10
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Make Me Smile
+Printing iterator value's length: 13
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+
+
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Make Me Smile
+Printing iterator value's length: 13
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Liberation
+Printing iterator value's length: 10
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Just You 'N' Me
+Printing iterator value's length: 15
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Introduction
+Printing iterator value's length: 12
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Goodbye
+Printing iterator value's length: 7
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Feelin' Stronger Every Day
+Printing iterator value's length: 26
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Dialogue
+Printing iterator value's length: 8
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Colour My World
+Printing iterator value's length: 15
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Beginnings
+Printing iterator value's length: 10
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Aire
+Printing iterator value's length: 4
+
+
+*** Testing const reverse iterator using prefix
+
+Printing iterator value: Make Me Smile
+Printing iterator value's length: 13
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Liberation
+Printing iterator value's length: 10
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Just You 'N' Me
+Printing iterator value's length: 15
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Introduction
+Printing iterator value's length: 12
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Goodbye
+Printing iterator value's length: 7
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Feelin' Stronger Every Day
+Printing iterator value's length: 26
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Dialogue
+Printing iterator value's length: 8
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Colour My World
+Printing iterator value's length: 15
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Beginnings
+Printing iterator value's length: 10
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Aire
+Printing iterator value's length: 4
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+
+
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Aire
+Printing iterator value's length: 4
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Beginnings
+Printing iterator value's length: 10
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Colour My World
+Printing iterator value's length: 15
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Dialogue
+Printing iterator value's length: 8
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Feelin' Stronger Every Day
+Printing iterator value's length: 26
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Goodbye
+Printing iterator value's length: 7
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Introduction
+Printing iterator value's length: 12
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Just You 'N' Me
+Printing iterator value's length: 15
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Liberation
+Printing iterator value's length: 10
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Make Me Smile
+Printing iterator value's length: 13
+
+
+*** Testing const reverse iterator using postfix
+
+Printing iterator value: Make Me Smile
+Printing iterator value's length: 13
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Liberation
+Printing iterator value's length: 10
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Just You 'N' Me
+Printing iterator value's length: 15
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Introduction
+Printing iterator value's length: 12
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Goodbye
+Printing iterator value's length: 7
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Feelin' Stronger Every Day
+Printing iterator value's length: 26
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Dialogue
+Printing iterator value's length: 8
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Colour My World
+Printing iterator value's length: 15
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Beginnings
+Printing iterator value's length: 10
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+Printing iterator value: Aire
+Printing iterator value's length: 4
+Moving iterator forward one cell.
+Moved iterator forward one cell.
+
+
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Aire
+Printing iterator value's length: 4
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Beginnings
+Printing iterator value's length: 10
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Colour My World
+Printing iterator value's length: 15
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Dialogue
+Printing iterator value's length: 8
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Feelin' Stronger Every Day
+Printing iterator value's length: 26
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Goodbye
+Printing iterator value's length: 7
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Introduction
+Printing iterator value's length: 12
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Just You 'N' Me
+Printing iterator value's length: 15
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Liberation
+Printing iterator value's length: 10
+Moving iterator backward one cell.
+Moved iterator backward one cell.
+Printing iterator value: Make Me Smile
+Printing iterator value's length: 13

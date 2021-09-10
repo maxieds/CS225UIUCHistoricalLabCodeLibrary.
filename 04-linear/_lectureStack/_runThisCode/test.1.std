@@ -1,0 +1,77 @@
+tester1 is empty
+
+tester2 is empty
+
+8
+tester3 is empty
+
+Current top element is: 7
+Current top element is: 2
+Current top element is: 9
+Current top element is: 11
+Current top element is: 4
+Current top element is: 8
+Current top element is: 3
+Current top element is: 1
+Current top element is: 10
+Current top element is: 5
+Current top element is: 0
+Current top element is: 6
+
+tester1 is not empty
+
+tester4 is not empty
+
+8
+tester5 is not empty
+
+Just popped 6 from stack.
+tester4 is not empty
+
+Just popped 0 from stack.
+tester4 is not empty
+
+Just popped 5 from stack.
+tester4 is not empty
+
+Just popped 10 from stack.
+tester4 is not empty
+
+Just popped 1 from stack.
+tester4 is not empty
+
+Just popped 3 from stack.
+tester4 is not empty
+
+Just popped 8 from stack.
+tester4 is not empty
+
+Just popped 4 from stack.
+tester4 is not empty
+
+Just popped 11 from stack.
+tester4 is not empty
+
+Just popped 9 from stack.
+tester4 is not empty
+
+Just popped 2 from stack.
+tester4 is not empty
+
+Just popped 7 from stack.
+tester4 is empty
+
+Current top element is: 7
+Current top element is: 2
+Current top element is: 9
+Current top element is: 2
+Current top element is: 4
+Current top element is: 2
+Current top element is: 7
+Current top element is: 1
+Current top element is: 10
+Current top element is: 1
+Current top element is: 7
+
+tester4 is not empty
+

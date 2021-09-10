@@ -1,0 +1,32 @@
+
+Description of directories:
+
+  _asserts : This directory contains a small C++ program, one that
+             doesn't even have any new classes to define new 
+             data types. 
+
+  _courses : This directory contains a somewhat larger C++ program,
+             including a non-primitive type with a member variable 
+             whose type is another non-primitive type (in particular,
+             Schedule uses the CourseInfo type). 
+              
+  _java : This directory contains a program as similar as possible
+          to that in _courses, but implemented in Java instead of
+          C++. We provide it only for comparison purposes -- those
+          of you who know Java but not C++ could compare the 
+          code in _courses to this code to see the similarities
+          and differences. You will *never* be tested on anything
+          Java-related in CS225. 
+
+
+The code in _asserts and _courses is what you want to make sure
+you understand. If after having the first three lectures and first
+discussion section, and looking carefully over your notes from those
+lectures and that section, you still have questions about some of the
+code in _asserts and _courses, please ask! You are responsible for
+understanding that code. 
+
+
+
+
+ 

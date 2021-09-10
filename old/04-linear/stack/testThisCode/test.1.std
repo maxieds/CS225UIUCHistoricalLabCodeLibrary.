@@ -1,0 +1,113 @@
+Size of tester1 is: 0
+tester 1 is: < empty stack >
+tester1 is empty
+
+Size of tester2 is: 0
+tester 2 is: < empty stack >
+tester2 is empty
+
+Size of tester3 is: 0
+tester 3 is: < empty stack >
+tester3 is empty
+
+Current top element is: 7
+Current top element is: 2
+Current top element is: 9
+Current top element is: 11
+Current top element is: 4
+Current top element is: 8
+Current top element is: 3
+Current top element is: 1
+Current top element is: 10
+Current top element is: 5
+Current top element is: 0
+Current top element is: 6
+
+Size of tester1 is: 12
+tester 1 is: < 6 0 5 10 1 3 8 4 11 9 2 7 >
+tester1 is not empty
+
+Size of tester4 is: 12
+tester 4 is: < 6 0 5 10 1 3 8 4 11 9 2 7 >
+tester4 is not empty
+
+Size of tester5 is: 12
+tester 5 is: < 6 0 5 10 1 3 8 4 11 9 2 7 >
+tester5 is not empty
+
+Just popped 6 from stack.
+Size of tester4 is: 11
+tester 4 is: < 0 5 10 1 3 8 4 11 9 2 7 >
+tester4 is not empty
+
+Just popped 0 from stack.
+Size of tester4 is: 10
+tester 4 is: < 5 10 1 3 8 4 11 9 2 7 >
+tester4 is not empty
+
+Just popped 5 from stack.
+Size of tester4 is: 9
+tester 4 is: < 10 1 3 8 4 11 9 2 7 >
+tester4 is not empty
+
+Just popped 10 from stack.
+Size of tester4 is: 8
+tester 4 is: < 1 3 8 4 11 9 2 7 >
+tester4 is not empty
+
+Just popped 1 from stack.
+Size of tester4 is: 7
+tester 4 is: < 3 8 4 11 9 2 7 >
+tester4 is not empty
+
+Just popped 3 from stack.
+Size of tester4 is: 6
+tester 4 is: < 8 4 11 9 2 7 >
+tester4 is not empty
+
+Just popped 8 from stack.
+Size of tester4 is: 5
+tester 4 is: < 4 11 9 2 7 >
+tester4 is not empty
+
+Just popped 4 from stack.
+Size of tester4 is: 4
+tester 4 is: < 11 9 2 7 >
+tester4 is not empty
+
+Just popped 11 from stack.
+Size of tester4 is: 3
+tester 4 is: < 9 2 7 >
+tester4 is not empty
+
+Just popped 9 from stack.
+Size of tester4 is: 2
+tester 4 is: < 2 7 >
+tester4 is not empty
+
+Just popped 2 from stack.
+Size of tester4 is: 1
+tester 4 is: < 7 >
+tester4 is not empty
+
+Just popped 7 from stack.
+Size of tester4 is: 0
+tester 4 is: < empty stack >
+tester4 is empty
+
+Current top element is: 7
+Current top element is: 2
+Current top element is: 9
+Current top element is: 2
+Current top element is: 4
+Current top element is: 2
+Current top element is: 7
+Current top element is: 1
+Current top element is: 10
+Current top element is: 1
+Current top element is: 7
+
+Size of tester4 is: 1
+tester 4 is: < 7 >
+tester4 is not empty
+

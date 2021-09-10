@@ -1,0 +1,80 @@
+[B#include "asserts.h"
+#include "heap.h"
+
+
+// default constructor 
+template <class Etype>
+Binary_Heap<Etype>::Binary_Heap(unsigned int Initial_Size)
+{
+   Size=0;
+   Max_Size = Initial_Size; 
+   Elements = new Etype[Max_Size+1]; 
+   Assert(Elements!=NULL, "Out of space in heap constructor");
+   Elements[0] = 0;  // dummy value
+}
+
+
+// inserts the value passed as parameter into the heap 
+template <class Etype>
+void Binary_Heap<Etype>::Insert(const Etype & X)
+{
+   unsigned int i; 
+   
+   Assert(!Is_Full(), "Priority queue is full"); 
+
+   i = ++Size; 
+   while ((Elements[i/2]>X) && (i != 1))
+   {
+      Elements[i]=Elements[i/2]; // swap bubble with number above  
+      i/=2;                     
+   }
+   Elements[i]=X;  // bubble, which has now come to rest, is given
+                   //  the new element  
+}
+
+// removes and returns the minimum element of the heap 
+template <class Etype>
+Etype Binary_Heap<Etype>::Delete_Min()
+{
+   unsigned int Child; 
+   Etype Min_Element, Last_Element; 
+
+   Assert(!Is_Empty(), "Priority Queue is Empty"); 
+
+   Min_Element = Elements[1]; 
+   Last_Element = Elements[Size--]; 
+
+   for (int i=1; i*2 <= Size; i=Child)
+   {
+      // Find smaller child
+      Child = i*2;       // child is left child  
+      if (Child !=Size)  // If this is not == Size, then right child exists
+         if (Elements[Child+1] < Elements[Child])
+            Child++; 
+
+      // Percolate one level
+      if (Last_Element > Elements[Child])  // compare which ever child
+					   // was selected above to the
+					   // element we are holding 
+         Elements[i] = Elements[Child]; 
+      else
+         break; 
+   }
+   Elements[i] = Last_Element;   // Place holding value into the bubble 
+
+   return Min_Element; 
+}
+
+
+// returns minimum element of the heap without deleting it 
+template <class Etype>
+Etype Binary_Heap<Etype>::Find_Min() const
+{
+   Assert(!Is_Empty(), "Priority Queue is Empty"); 
+   return Elements[1]; 
+}
+
+
+
+
+

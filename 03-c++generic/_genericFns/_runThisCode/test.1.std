@@ -1,0 +1,337 @@
+*** First -- we run a bunch of tests on vectors...
+
+
+
+*** Printing out names, first name first, without using function
+
+Susan Williams
+Fred Williams
+Sam Jackson
+Boba Fett
+Roberta Williams
+Bob Collins
+Frank Collins
+Frank Williams
+Susan Jackson
+Michael Jackson
+Sam Wiliams
+Williams Jackson
+Sam Bob
+Robin Williams
+Roberta Jackson
+Fred Jackson
+Michael Collins
+Bob Fett
+
+
+*** Printing out names, first name first
+
+Susan Williams
+Fred Williams
+Sam Jackson
+Boba Fett
+Roberta Williams
+Bob Collins
+Frank Collins
+Frank Williams
+Susan Jackson
+Michael Jackson
+Sam Wiliams
+Williams Jackson
+Sam Bob
+Robin Williams
+Roberta Jackson
+Fred Jackson
+Michael Collins
+Bob Fett
+
+
+*** Printing out names, first name first, again
+
+Susan Williams
+Fred Williams
+Sam Jackson
+Boba Fett
+Roberta Williams
+Bob Collins
+Frank Collins
+Frank Williams
+Susan Jackson
+Michael Jackson
+Sam Wiliams
+Williams Jackson
+Sam Bob
+Robin Williams
+Roberta Jackson
+Fred Jackson
+Michael Collins
+Bob Fett
+
+
+*** Printing out names, last name first
+
+Williams, Susan
+Williams, Fred
+Jackson, Sam
+Fett, Boba
+Williams, Roberta
+Collins, Bob
+Collins, Frank
+Williams, Frank
+Jackson, Susan
+Jackson, Michael
+Wiliams, Sam
+Jackson, Williams
+Bob, Sam
+Williams, Robin
+Jackson, Roberta
+Jackson, Fred
+Collins, Michael
+Fett, Bob
+
+
+*** Printing out names, last name first, again
+
+Williams, Susan
+Williams, Fred
+Jackson, Sam
+Fett, Boba
+Williams, Roberta
+Collins, Bob
+Collins, Frank
+Williams, Frank
+Jackson, Susan
+Jackson, Michael
+Wiliams, Sam
+Jackson, Williams
+Bob, Sam
+Williams, Robin
+Jackson, Roberta
+Jackson, Fred
+Collins, Michael
+Fett, Bob
+
+
+*** Printing out subset, first name first
+
+Boba Fett
+Roberta Williams
+Bob Collins
+Frank Collins
+Frank Williams
+Susan Jackson
+Michael Jackson
+Sam Wiliams
+Williams Jackson
+Sam Bob
+Robin Williams
+Roberta Jackson
+Fred Jackson
+
+
+*** Printing out subset, last name first
+
+Fett, Boba
+Williams, Roberta
+Collins, Bob
+Collins, Frank
+Williams, Frank
+Jackson, Susan
+Jackson, Michael
+Wiliams, Sam
+Jackson, Williams
+Bob, Sam
+Williams, Robin
+Jackson, Roberta
+Jackson, Fred
+
+
+*** Printing all names with last name Williams, in first/last form
+
+Susan Williams
+Fred Williams
+Roberta Williams
+Frank Williams
+Robin Williams
+
+
+*** Printing all names with first name Bob, in last, first form
+
+Collins, Bob
+Fett, Bob
+
+
+*** Printing all names in subset with first name Bob, in last, first form
+
+Collins, Bob
+
+
+
+*** Then -- we run the exact same tests on Arrays...
+
+
+
+*** Printing out names, first name first, without using function
+
+Susan Williams
+Fred Williams
+Sam Jackson
+Boba Fett
+Roberta Williams
+Bob Collins
+Frank Collins
+Frank Williams
+Susan Jackson
+Michael Jackson
+Sam Wiliams
+Williams Jackson
+Sam Bob
+Robin Williams
+Roberta Jackson
+Fred Jackson
+Michael Collins
+Bob Fett
+
+
+*** Printing out names, first name first
+
+Susan Williams
+Fred Williams
+Sam Jackson
+Boba Fett
+Roberta Williams
+Bob Collins
+Frank Collins
+Frank Williams
+Susan Jackson
+Michael Jackson
+Sam Wiliams
+Williams Jackson
+Sam Bob
+Robin Williams
+Roberta Jackson
+Fred Jackson
+Michael Collins
+Bob Fett
+
+
+*** Printing out names, first name first, again
+
+Susan Williams
+Fred Williams
+Sam Jackson
+Boba Fett
+Roberta Williams
+Bob Collins
+Frank Collins
+Frank Williams
+Susan Jackson
+Michael Jackson
+Sam Wiliams
+Williams Jackson
+Sam Bob
+Robin Williams
+Roberta Jackson
+Fred Jackson
+Michael Collins
+Bob Fett
+
+
+*** Printing out names, last name first
+
+Williams, Susan
+Williams, Fred
+Jackson, Sam
+Fett, Boba
+Williams, Roberta
+Collins, Bob
+Collins, Frank
+Williams, Frank
+Jackson, Susan
+Jackson, Michael
+Wiliams, Sam
+Jackson, Williams
+Bob, Sam
+Williams, Robin
+Jackson, Roberta
+Jackson, Fred
+Collins, Michael
+Fett, Bob
+
+
+*** Printing out names, last name first, again
+
+Williams, Susan
+Williams, Fred
+Jackson, Sam
+Fett, Boba
+Williams, Roberta
+Collins, Bob
+Collins, Frank
+Williams, Frank
+Jackson, Susan
+Jackson, Michael
+Wiliams, Sam
+Jackson, Williams
+Bob, Sam
+Williams, Robin
+Jackson, Roberta
+Jackson, Fred
+Collins, Michael
+Fett, Bob
+
+
+*** Printing out subset, first name first
+
+Boba Fett
+Roberta Williams
+Bob Collins
+Frank Collins
+Frank Williams
+Susan Jackson
+Michael Jackson
+Sam Wiliams
+Williams Jackson
+Sam Bob
+Robin Williams
+Roberta Jackson
+Fred Jackson
+
+
+*** Printing out subset, last name first
+
+Fett, Boba
+Williams, Roberta
+Collins, Bob
+Collins, Frank
+Williams, Frank
+Jackson, Susan
+Jackson, Michael
+Wiliams, Sam
+Jackson, Williams
+Bob, Sam
+Williams, Robin
+Jackson, Roberta
+Jackson, Fred
+
+
+*** Printing all names with last name Williams, in first/last form
+
+Susan Williams
+Fred Williams
+Roberta Williams
+Frank Williams
+Robin Williams
+
+
+*** Printing all names with first name Bob, in last, first form
+
+Collins, Bob
+Fett, Bob
+
+
+*** Printing all names in subset with first name Bob, in last, first form
+
+Collins, Bob
+
+

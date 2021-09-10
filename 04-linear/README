@@ -1,0 +1,25 @@
+--------------
+04-linear
+--------------
+
+The directory _lectureList has three different implementations of a
+List ADT similar to the one we have looked at in lecture. 
+
+The directory _lectureStack has two different implementations
+of a Stack ADT.
+
+The directory _lectureQueue has two different implementations
+of a Queue ADT.
+
+The directory _c++stdlist contains our implementation 
+of (most of) the C++ STL list class, complete with all
+four iterator types.
+
+
+Each of the four directories has one or more pairs of files to 
+inspect more closely, along with a "_runThisCode/" directory where 
+you can find some files to compile together with that code, and
+a test.1.std which contains the output for such a program.
+
+                                Jason 
+

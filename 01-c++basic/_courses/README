@@ -1,0 +1,13 @@
+If you comment out the #ifndef/#define/#endif lines in 
+courseInfo.h, the program will not compile. 
+
+After you compile, running the program with test.1 as input
+should produce output identical to what is in test.1.std. 
+
+   courseTest < test.1 > sampleFile
+
+is the command that should be used, where "sampleFile" can be 
+replaced with whatever other filename you want. (MP1 will
+talk a bit more about input and output redirection.)
+
+ 

@@ -1,0 +1,22 @@
+
+The directory _templateArray has an example of a generic array
+class, where instead of an "array of ints" or "array of string pointers",
+you have an "array of whatevers" because it is a template class. 
+
+The directory _simpleIter has an example of a simple iterator
+added to the integer array wrapper class you've already seen,
+and a sample main() and Makefile with which to compile this class.
+The file test.1.sample is what this program should produce as output.
+
+The directory _c++stdvector contains our implementation 
+of (most of) the C++ STL vector class, complete with all
+four iterator types.
+
+The directory _generic contains an example of using the vector
+(and iterators to the vector), and function objects, and generic
+functions, all together. 
+
+
+				Jason 
+
+

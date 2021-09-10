@@ -1,0 +1,51 @@
+Testing list code
+-----------------
+
+
+ - Testing contiguous implementation:
+ 
+     1) copy contiguous-list.* to this directory
+        (and comment out the #include line for singly-linked-list.h
+         if it is uncommented)
+     2) uncomment the #include line for that .h file in listTest.cpp
+     3) copy Makefile.con to Makefile 
+     4) run `make', and then run the resultant a.out. Results should
+         match test.1.std. If you want to redirect to a file, use
+         "a.out >& filename", not "a.out > filename", so that you can 
+         get the results of any error output as well as the standard
+         output. 
+
+ - Testing singly-linked implementation:
+
+     1) copy singly-linked-list.* to this directory
+     2) uncomment the #include line for that .h file in listTest.cpp
+        (and comment out the #include line for contiguous-list.h
+         if it is uncommented)
+     3) copy Makefile.sll to Makefile 
+     4) run `make', and then run the resultant a.out. Results should
+         match test.1.std. If you want to redirect to a file, use
+         "a.out >& filename", not "a.out > filename", so that you can 
+         get the results of any error output as well as the standard
+         output. 
+
+ - Testing doubly-linked implementation:
+
+     1) copy doubly-linked-list.* to this directory
+     2) uncomment the #include line for that .h file in listTest.cpp
+        (and comment out the #include line for contiguous-list.h
+         and singly-linked-list.h if they are uncommented)
+     3) copy Makefile.dll to Makefile
+     4) run `make', and then run the resultant a.out. Results should
+         match test.1.std. If you want to redirect to a file, use
+         "a.out >& filename", not "a.out > filename", so that you can
+         get the results of any error output as well as the standard
+         output.
+
+
+Note that all implementations produce the same output, as they
+should, since they are implementing the same interface. Once
+you have tested one implementation, you will need too run 
+"make clean" before testing the others.
+
+
+

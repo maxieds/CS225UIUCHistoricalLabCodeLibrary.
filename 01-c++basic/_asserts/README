@@ -1,0 +1,11 @@
+
+If the files are compiled and run in their current form,
+then the output of the resultant program should match the
+text in test.1.std. However, to see the output of the Assert
+functions, you can uncomment one or both of the two Assert
+calls in main.cpp and then re-compile and re-run the program.
+In that case, the output of the program would be different
+than the text in test.1.std.
+
+
+

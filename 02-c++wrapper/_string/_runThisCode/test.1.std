@@ -1,0 +1,68 @@
+*** Testing the String no-argument constructor...
+String is: 
+
+*** Testing the second String constructor...
+String is: Hello world!
+
+*** Testing String copy constructor...
+String is: Hello world!
+
+*** Testing String assignment operator...
+String's initial value is: First value
+Latest value of String is: 
+Final value of String is: Hello world!
+
+*** Printing blank string character by character...
+
+*** Printing second string character by character...
+H
+e
+l
+l
+o
+ 
+w
+o
+r
+l
+d
+!
+
+*** Changing first letter of second string...
+Second String is now: sello world!
+
+*** Testing concat...
+First concat is: sello world!Hello world!
+Second concat is: sello world!
+Third concat is: sello world!
+
+*** Testing substring...
+First substring is: o world!
+Second substring is: sello w
+Third substring is: rld!
+Fourth substring is: ld!
+*** Performing some comparisons...
+0
+0
+1
+
+1
+0
+0
+
+0
+1
+
+1
+0
+
+0
+1
+0
+1
+
+1
+1
+1
+0
+

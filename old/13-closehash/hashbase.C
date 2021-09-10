@@ -1,0 +1,306 @@
+// *************************************************
+// *                                               *
+// *  hashbase.C                                   *
+// *                                               *
+// *  Implementation for an abstract hash class    * 
+// *                                               *
+// *  Written 8/97 by Jason Zych                   *
+// *  Revised: 15 Oct 1997 by Wendy L. Terry       *
+// *            -- made Find() pure virtual,       *
+// *            -- moved probing to Find()         *
+// *            -- added Rehash()                  *
+// *            -- rewrote Insert() for use with   *
+// *                new Find()                     *
+// *            -- updated comments                *
+// *           25 Feb 1998 by Wendy L. Terry       *
+// *            -- added copy constructor          *
+// *                 and operator=                 *
+// *           7 Mar 1998 by Wendy L. Terry        *
+// *            -- updated Print()                 *
+// *                                               *
+// *************************************************
+
+#include <iostream.h>
+#include "asserts.h"
+#include "hashbase.h"
+
+
+// HashTable 
+//   - default constructor
+template <class Ktype, class Etype>
+HashBase<Ktype, Etype>::HashBase(int tableSize)
+{
+  hashTable = new Array<TableNode*>(0, tableSize - 1); 
+
+  // initialize values
+  hashTableSize = tableSize; 
+  currentIndex = 0; 
+  numElements = 0;
+
+  // allocate table slots
+  for (int i=0; i<hashTableSize; i++) {
+    (*hashTable)[i] = new TableNode(); 
+    Assert( (*hashTable)[i] != NULL, "Out of space");
+  }
+}
+
+
+// HashBase
+//  - copy constructor
+//  - parameters: origTable - the table to copy
+//  - creates a new hash table that has the same values stored
+//      in it as origTable does
+//  - assuming that operator= is defined for Ktype and Etype,
+//      the resulting copy will be a deep copy
+template <class Ktype, class Etype>
+HashBase<Ktype, Etype>::HashBase(const HashBase<Ktype, Etype> &origTable)
+{
+  // copy static values
+  hashTableSize = origTable.hashTableSize;
+  numElements = origTable.numElements;
+  currentIndex = origTable.currentIndex;
+
+  // create new table and fill with copies of old table
+  hashTable = new Array<TableNode*>(0, hashTableSize - 1);
+
+  for (int i = 0; i < hashTableSize; i++) {
+
+    // allocate the new node
+    (*hashTable)[i] = new TableNode;
+    Assert( (*hashTable)[i] != NULL, "Out of space");
+
+    // set the new values to match those of origTable
+    (*hashTable)[i]->tKey = (*(origTable.hashTable))[i]->tKey;
+    (*hashTable)[i]->tElem = (*(origTable.hashTable))[i]->tElem;
+    (*hashTable)[i]->status = (*(origTable.hashTable))[i]->status;
+  }
+}
+
+
+// ~HashTable
+//   - destructor
+template <class Ktype, class Etype>
+HashBase<Ktype, Etype>::~HashBase()
+{
+  // first, deallocate all table entries
+  for (int i = 0; i < hashTableSize; i++ ) {
+      delete (*hashTable)[i];
+  }
+
+  // now deallocate table
+  delete hashTable; 
+}
+
+
+// operator=
+//  - parameters: origTable - the table to copy from
+//  - modifies the invoking hash table so it has the same values
+//      stored in it as origTable does
+//  - assuming that operator= is defined for Ktype and Etype,
+//      the resulting copy will be a deep copy
+template<class Ktype, class Etype>
+HashBase<Ktype, Etype>&
+HashBase<Ktype, Etype>::operator=(const HashBase<Ktype, Etype> &origTable)
+{
+  int i;
+
+  if (this != &origTable) {
+
+    // get rid of old table
+    for (i = 0; i < hashTableSize; i++) {
+      delete (*hashTable)[i];
+    }
+    delete hashTable;
+
+    // copy static values
+    hashTableSize = origTable.hashTableSize;
+    numElements = origTable.numElements;
+    currentIndex = origTable.currentIndex;
+    
+    // create new table and fill with copies of old table
+    hashTable = new Array<TableNode*>(0, hashTableSize - 1);
+
+    for (i = 0; i < hashTableSize; i++) {
+      // allocate the new node
+      (*hashTable)[i] = new TableNode;
+      Assert( (*hashTable)[i] != NULL, "Out of space");
+
+      // set the new values to match those of origTable
+      (*hashTable)[i]->tKey = (*(origTable.hashTable))[i]->tKey;
+      (*hashTable)[i]->tElem = (*(origTable.hashTable))[i]->tElem;
+      (*hashTable)[i]->status = (*(origTable.hashTable))[i]->status;
+    }
+  }
+  return *this;
+}
+ 
+   
+// Insert
+//  - parameters : Key - the value that lookups are performed on
+//               : Element - the value that should be stored in the
+//                             position found with a lookup of Key 
+//  - currentIndex refers to inserted node at completion
+template <class Ktype, class Etype>
+void HashBase<Ktype, Etype>::Insert(const Ktype &Key, const Etype &Element) 
+{
+  int flag = Find(Key); 
+
+  if (flag == 1) {  // Element is already in table
+
+    Warn(0, "Trying to re-insert element");
+    return;
+
+  }else if (flag == 0) {  // currentIndex is place to insert
+
+    numElements = numElements + 1;
+
+    if ( (*hashTable)[currentIndex]->status == 'D' ) {
+
+      // Key was used before, insert new Element
+    //  assert( (*hashTable)[currentIndex]->tKey == Key, "Crash in Insert");
+      (*hashTable)[currentIndex]->status = 'V';
+      (*hashTable)[currentIndex]->tElem = Element;
+
+    }else {
+
+      // insert Element and Key
+      (*hashTable)[currentIndex]->status = 'V';
+      (*hashTable)[currentIndex]->tKey = Key;
+      (*hashTable)[currentIndex]->tElem = Element;
+
+    }
+
+    // check if need to rehash
+    if ( numElements > (hashTableSize * .5) ) {
+      Rehash();
+    }
+
+  }else { 
+    Assert(0, "Crash in Insert--unknown flag value");
+  }
+}
+
+
+// Remove
+//   - parameters : Key - the value that should drive the lookup;
+//   - removes from the table the node found upon a lookup of Key 
+//   - if Key is not in table, reports error and returns
+template <class Ktype, class Etype>
+void HashBase<Ktype, Etype>::Remove(Ktype &Key)
+{
+  int flag = Find(Key); 
+  if (flag == 0) {
+    Warn(0, "Trying to remove key that isn't there!");
+    return;
+  }
+  (*hashTable)[currentIndex]->status = 'D';
+  currentIndex = 0;
+}
+
+
+// Retrieve
+//   - returns the *element* most recently found or inserted,
+//       unstable if called after Remove() with no intervening
+//       Find() or Insert()
+template <class Ktype, class Etype>
+Etype& HashBase<Ktype, Etype>::Retrieve()
+{
+  Warn( ((*hashTable)[currentIndex]->status == 'V'),
+	"Warning::Not a valid table entry");
+  return ((*hashTable)[currentIndex]->tElem);    
+} 
+
+
+// Print
+//   - prints out the information of the table
+template <class Ktype, class Etype>
+void HashBase<Ktype, Etype>::Print()
+{
+  for (int i = 0; i < hashTableSize; i++)
+    {  
+      cout << "Cell " << i << ": ";
+      if (((*hashTable)[i]->status) == 'V')
+	{
+	  cout << "key: " << (*hashTable)[i]->tKey;
+	  cout << "\telement: " << (*hashTable)[i]->tElem << endl; 
+	}
+      else 
+	cout << "empty" << endl;
+    } 
+}
+
+
+// NextPrime
+//   - non-member function to find the next prime after n
+int NextPrime(int n)
+{
+  int done = 0;
+  int isprime = 1;
+  int i;
+
+  if (n <= 2) {
+    return 2;
+  }
+
+  while (!done) {
+    // try the next n
+    i = 2;
+
+    while ( (i <= n/2) && (isprime) ) {
+      // check if n is divisible by i
+      if ( (n % i) == 0 ) {
+	isprime = 0;
+      }else {
+	i++;
+      }
+    }
+
+    // if still prime, then done, else repeat test
+    if (isprime) {
+      done = 1;
+    }else {
+      n++;
+      isprime = 1;
+    }
+  }
+  return n;
+}
+
+
+// Rehash
+//   - rehashes the table when it gets close to full
+template<class Ktype, class Etype>
+void HashBase<Ktype, Etype>::Rehash()
+{
+  int i;
+  int oldSize = hashTableSize;
+
+  // make a "deep" copy of the table for later
+  Array<TableNode*>* oldTable = new Array<TableNode*>(0, oldSize-1);
+  for (i = 0; i < hashTableSize; i++ ) {
+    (*oldTable)[i] = new TableNode( (*hashTable)[i]->tKey,
+				    (*hashTable)[i]->tElem );
+    (*oldTable)[i]->status = (*hashTable)[i]->status;
+  }
+
+  // set new values
+  numElements = 0;
+  hashTableSize = NextPrime( 2 * oldSize );
+  hashTable->SetBounds(0, hashTableSize-1);
+
+  // allocate the new table
+  for (i = 0; i < hashTableSize; i++ ) {
+    (*hashTable)[i] = new TableNode();
+    Assert( (*hashTable)[i] != NULL, "Out of space");
+  }
+
+  // move old values into new table
+  for (i = 0; i < oldSize; i++ ) {
+    if ( (*oldTable)[i]->status == 'V' ) {
+      Insert( (*oldTable)[i]->tKey, (*oldTable)[i]->tElem );
+    }
+  }
+
+  // deallocate old table
+  delete oldTable;
+}
