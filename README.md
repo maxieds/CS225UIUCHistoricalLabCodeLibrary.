@@ -8,6 +8,11 @@ To clone the repository, run the following ``bash`` terminal command:
 ```bash
 $ git clone https://github.com/maxieds/CS225UIUCHistoricalLabCodeLibrary\..git
 ```
+A suggestion for a prayer at compiling:
+```bash
+$ sudo ln -s $(which g++) /usr/local/bin/CC
+```
+"*You* **WILL** *experience testosterone in this department. Just (like) give it back to them?*" -- Jason's successor in CS225 at UIUC
 
 ## Links 
 
